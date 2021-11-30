@@ -17,7 +17,7 @@ def menu():
 
 def main(nb_vote, random, delay=0, max=0, min=0):
     vote = 0
-    payload = {'api_key': '73abfd995b82f6ad2a4e0afaf22df519', 'url':'https://karaoke.fribourg-centre.com/wp-admin/admin-ajax.php', 'keep_headers': 'true', 'country_code': 'fr'}
+    payload = {'api_key': 'apikey_from_scraperapi', 'url':'https://karaoke.fribourg-centre.com/wp-admin/admin-ajax.php', 'keep_headers': 'true', 'country_code': 'fr'}
     payload_website = {'api_key': '73abfd995b82f6ad2a4e0afaf22df519', 'url':'https://karaoke.fribourg-centre.com/karaoke/votez-pour-marouchka-au-karaoke-challenge/'}
     data = {'action': 'save', 'id': '976'}
     headers = {
