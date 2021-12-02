@@ -15,7 +15,7 @@ def menu():
         return nb_vote, random_delay, delay
 
 
-def main(nb_vote, random, delay=0, max=0, min=0, apikey):
+def main(nb_vote, random, delay=0, max=0, min=0, apikey=""):
     vote = 0
     payload = {'api_key': apikey, 'url':'https://karaoke.fribourg-centre.com/wp-admin/admin-ajax.php', 'keep_headers': 'true', 'country_code': 'fr'}
     payload_website = {'api_key': apikey, 'url':'https://karaoke.fribourg-centre.com/karaoke/votez-pour-marouchka-au-karaoke-challenge/'}
