@@ -15,10 +15,10 @@ def menu():
         return nb_vote, random_delay, delay
 
 
-def main(nb_vote, random, delay=0, max=0, min=0):
+def main(nb_vote, random, delay=0, max=0, min=0, apikey):
     vote = 0
-    payload = {'api_key': 'apikey_from_scraperapi_here', 'url':'https://karaoke.fribourg-centre.com/wp-admin/admin-ajax.php', 'keep_headers': 'true', 'country_code': 'fr'}
-    payload_website = {'api_key': 'apikey_from_scraperapi_here', 'url':'https://karaoke.fribourg-centre.com/karaoke/votez-pour-marouchka-au-karaoke-challenge/'}
+    payload = {'api_key': apikey, 'url':'https://karaoke.fribourg-centre.com/wp-admin/admin-ajax.php', 'keep_headers': 'true', 'country_code': 'fr'}
+    payload_website = {'api_key': apikey, 'url':'https://karaoke.fribourg-centre.com/karaoke/votez-pour-marouchka-au-karaoke-challenge/'}
     data = {'action': 'save', 'id': '976'}
     headers = {
         'sec-fetch-site': 'smae-origin',
@@ -48,7 +48,8 @@ def main(nb_vote, random, delay=0, max=0, min=0):
 
 if __name__ == '__main__':
     settings = menu()
+    key = input("Coller votre apikey de scraperAPI : \n>>> ")
     if (settings[1] == "oui"):
-        main(nb_vote=settings[0], random=settings[1], max=settings[2], min=settings[3])
+        main(nb_vote=settings[0], random=settings[1], max=settings[2], min=settings[3], apikey=key)
     elif (settings[1] == "non"):
-        main(nb_vote=settings[0], random=settings[1], delay=settings[2])
+        main(nb_vote=settings[0], random=settings[1], delay=settings[2], apikey=key)
