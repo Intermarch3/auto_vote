@@ -1,18 +1,18 @@
-# Salut 👋
-Voici mon programme d'auto vote.
-Il utilise un proxy pour voter autant de fois que demander pour un concour sur un site en evitant le block d'adresse IP.
+# Hello 👋
+Here is my program of self vote.
+I use a proxy to vote as many times as asking in a site which block IP adress.
 
-## Proxy utilisés :
-- scraperAPI pour post_vote
-- selenium pour selenium_vote
+## Proxy used :
+- scraperAPI for post_vote
+- selenium for selenium_vote
 
-## Execution ⚙
-- Pour selenium_vote : 
-     -  Installer le module selenium avec ```pip install selenium``` 
-     -  Vérifiez si vous avez Google Chrome version 96 d'installer ou sinon remplcez le chromedriver.exe par celui correspondant à la version de votre chrome. 
-- Pour post_vote :
-     -  Remplacez l'APIkey dans le "payload" par la votre avec scraperAPI 
-     -  Installez le module requests avec ```pip install requests``` puis lancez le programme
+## Launch ⚙
+- For selenium_vote : 
+     -  Installr selenium module with ```pip install selenium``` 
+     -  Check if you have Google Chrome in 96 version install or replace chromedriver.exe by the good one of your chrome version [here](https://chromedriver.chromium.org)
+- For post_vote :
+     -  Replace the APIkey in the "payload" with yours with scraperAPI 
+     -  Install requests module with ```pip install requests``` then launch the program.
 
-## Aide/contact 📩
-Si vous ne comprenez pas comment il fonctionne ou que vous tombez sur un bug, contactez moi dans la section commentaire ou avec mes reseaux sociaux sur mon profile.
+## Help/contact 📩
+If you don't understand how it works or you come across a bug, contact me with my social media on my profile.
